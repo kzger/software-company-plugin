@@ -1,0 +1,12 @@
+{
+  "name": "software-company-marketplace",
+  "interface": {"displayName": "Software Company Marketplace"},
+  "plugins": [
+    {
+      "name": "software-company",
+      "source": {"source": "local", "path": "./plugins/software-company"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Productivity"
+    }
+  ]
+}

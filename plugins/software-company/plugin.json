@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "software-company",
+  "version": "0.4.0",
+  "description": "Plan, implement, test, and review software in the current Codex App workspace.",
+  "keywords": ["software-engineering", "planning", "code-review"],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "interface": {
+        "displayName": "Software Company",
+        "shortDescription": "Plan and deliver software in Codex.",
+        "longDescription": "Create a PRD, system design, and task list. Continue implementation, testing, and review in the same local Codex App workspace.",
+        "category": "Productivity"
+      }
+    }
+  }
+}
