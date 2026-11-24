@@ -11,7 +11,7 @@
 ## 本地契約
 
 - 套件包含技能及其參考文件，使用目前 Codex App 的訂閱、工作階段與工作區。
-- `plugin.json` 的名稱須與 marketplace 一致。技能入口保持在 `skills/software-company/SKILL.md`。
+- `plugin.json` 的名稱須與 marketplace 一致。總入口與四個模式入口各在 `skills/` 下提供一份 `SKILL.md`。
 
 ## 工作指引
 
@@ -23,4 +23,4 @@
 
 ## 子層 DOX 索引
 
-- [技能契約](skills/software-company/AGENTS.md) 管理規劃、實作、測試與審查的交接。
+- [技能入口](skills/AGENTS.md) 管理可供 Codex 探索的模式入口與共用流程的索引。

@@ -6,7 +6,7 @@
 
 ## 責任範圍
 
-- `test_company.py` 驗證 marketplace、manifest、技能及參考文件。
+- `test_company.py` 驗證 marketplace、manifest、五個技能入口及共用參考文件。
 
 ## 本地契約
 

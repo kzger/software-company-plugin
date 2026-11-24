@@ -1,15 +1,20 @@
 ---
 name: software-company
-description: Plan or deliver a software project in the current Codex App workspace. Use when the user invokes Software Company, requests its plan documents, or asks to implement and review an existing Software Company plan.
+description: Route Software Company requests in the current Codex App workspace to Plan, Generate, Review, or Boss.
 ---
 
 # Software Company
 
 Use the current local Codex App chat and its selected workspace for every stage. Use the signed-in App model and its built-in file, terminal, and review capabilities. Execute the roles as stages in this chat, carrying decisions forward through workspace files.
 
-- **Plan** applies when the user asks for planning or leaves implementation scope unspecified. Read [Planning](references/plan.md), write the PRD, system design and task list, then stop after verifying them.
-- **Generate** applies when the user explicitly asks to implement. Read [Delivery](references/delivery.md) and continue from the agreed plan in this workspace. If a plan is missing and the user authorized the full workflow, complete Planning first.
-- **Review** applies when the user asks to review existing work. Read the review guidance in [Delivery](references/delivery.md) and inspect the requested implementation against its plan.
+When invoked through a mode-specific skill, use that mode. Otherwise route the request as follows.
+
+- **Plan** applies when the user asks for planning or leaves implementation scope unspecified. Follow [Planning](references/plan.md) and stop after verifying the three planning files.
+- **Generate** continues an existing plan when the user requests implementation. Follow [Generate](references/delivery.md#generate).
+- **Review** inspects existing work and test evidence. Follow [Review](references/delivery.md#review).
+- **Boss** takes a brief through planning, implementation, testing, and review in one request. Follow [Boss](references/boss.md) when the user selects Boss or explicitly asks for the full workflow from a brief.
+
+With only a mode name or a question about the modes, explain the required input or show `$software-company-plan`, `$software-company-generate`, `$software-company-review`, and `$software-company-boss`. A mode mention without a task does not authorize file changes.
 
 Keep the user's brief, approvals, and destination in this chat. Follow the project's applicable `AGENTS.md` files. If the active workspace is the wrong project, ask the user to select the intended local workspace in Codex before writing files.
 

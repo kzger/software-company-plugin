@@ -83,6 +83,7 @@ When the user requests a durable behavior change, record it here or in the relev
 
 - 團隊使用 Windows 版 Codex App，Software Company 的規劃、實作、測試與審查皆在同一個本機工作階段與工作區執行，模型使用該工作階段的 ChatGPT 訂閱。
 - 外掛以技能指引及內建工具執行。`plan` 在三份規劃文件驗證後停止，使用者授權實作時才接續交付。
+- 各操作提供可獨立提及的技能入口。`generate` 接續既有計畫，`boss` 接受單句實作目標並在同一聊天完成規劃、交付與驗收。
 - 分享給團隊的發行 ZIP 包含本機 marketplace、外掛、操作說明、DOX 和封裝測試。`.runtime/` 的本機驗收、虛擬環境與舊版備份留在工作區。
 
 ## Child DOX Index

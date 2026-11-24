@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "software-company",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Plan, implement, test, and review software in the current Codex App workspace.",
   "keywords": ["software-engineering", "planning", "code-review"],
   "extensions": {
@@ -10,7 +10,7 @@
       "interface": {
         "displayName": "Software Company",
         "shortDescription": "Plan and deliver software in Codex.",
-        "longDescription": "Create a PRD, system design, and task list. Continue implementation, testing, and review in the same local Codex App workspace.",
+        "longDescription": "Select Plan, Generate, Review, or Boss. Boss takes a brief through planning, implementation, testing, and review in the same local Codex App workspace.",
         "category": "Productivity"
       }
     }
